@@ -55,7 +55,7 @@ export default {
     mounted() {
         axios.get('http://127.0.0.1:8000/api/estudiantes/' + this.$route.params.id + '/')
             .then( response => {
-                console.log(response.data)
+                console.log("denis", response.data)
                 this.estudiante = response.data
             });
     },
